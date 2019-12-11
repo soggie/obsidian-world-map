@@ -46,50 +46,50 @@ const cities = [
 const ruins = [
   {
     name: 'Temple of the Dawn',
-    desc: '',
+    desc: 'A massive ziggurat said to contain relics from the forgotten empire in almost pristine conditions. Zealously guarded by a powerful society of remembrancers called the Awakened Order.',
     coord: L.latLng(-113.25, 153.6875)
   },
 
   {
     name: 'Ashenfel',
-    desc: '',
+    desc: 'Believed to be the capital of the forgotten empire, now a scorched ruins spawning an endless tide of horrors from beyond the Breach, held at bay by a tireless stream of crusaders.',
     coord: L.latLng(-125.6875, 162)
   },
 
   {
     name: 'Sinthar',
-    desc: '',
+    desc: 'Legendary stronghold of the Sintharii Circle who holds a monopoly on inter-city travel after the destruction of the waystone network. No outsider has succeeded in finding a way in yet.',
     coord: L.latLng(-121.0625, 181.25)
   },
 
   {
     name: 'Xisa',
-    desc: '',
+    desc: 'The petrified remains of the god of hunt and forage. A faint purple light pulses from within the cracks. No person have ever managed to get close enough to study it without going mad.',
     coord: L.latLng(-110.375, 29.9375)
   },
 
   {
     name: 'Maska',
-    desc: '',
+    desc: 'A massive pit lined with unknown organic matter, slime, blood and feces. In the middle of the pit is a massive hand clutching a spectacularly crafted ornate glaive in pristine condition.',
     coord: L.latLng(-137.71875, 82.625)
   },
 
   {
     name: 'Tower of Nadak',
-    desc: '',
+    desc: 'Its walls are lined with stone carvings of those who have attempted to breach the tower. A faint pulsing green glow emanates from the ornate windows in the tower\'s upper floors.',
     coord: L.latLng(-114, 127.6875)
   },
 
   {
     name: 'Blightharrow',
-    desc: '',
+    desc: 'Fortress of a secret society called the Viceron Company. Overlooks the Breach. First line of defense against any eldritch horrors that crosses over to Itheas through the Breach.',
     coord: L.latLng(-118.3125, 136.0625)
   },
 
   {
-    name: 'Greyblood Pass',
-    desc: '',
-    coord: L.latLng(-106.625, 80.8125)
+    name: 'Wurmfall Pass',
+    desc: 'A valley flanked by massive jagged pillars of rune-etched stones resembling a rib cage of a gargantuan serpent-like beast. The only (relatively) safe passage through the Balefire Range.',
+    coord: L.latLng(-116.5625, 105.5625)
   }
 ]
 
