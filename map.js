@@ -87,7 +87,7 @@ const ruins = [
   },
 
   {
-    name: 'Greyfire Pass',
+    name: 'Greyblood Pass',
     desc: '',
     coord: L.latLng(-106.625, 80.8125)
   }
