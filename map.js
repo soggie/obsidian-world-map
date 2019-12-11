@@ -108,7 +108,7 @@ const ruinsIcon = L.icon({
 
 const Map = function ({ 
   elementId = 'map-container', 
-  tileUrl = 'http://localhost:9000/tilelib/{z}-{x}-{y}.webp' 
+  tileUrl = 'tilelib/{z}-{x}-{y}.webp' 
 }) {
   const SIZE = 8192
   const MAX_ZOOM = 5
