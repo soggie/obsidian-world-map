@@ -146,6 +146,7 @@ const Map = function ({
     const original = 'Click on a Marker'
     document.getElementById('marker-title').innerHTML = poi.name
     document.getElementById('marker-description').innerHTML = poi.desc
+    document.getElementById('marker-class').innerHTML = poi.type
   }
 
   for (const poi of cities) {
@@ -160,6 +161,7 @@ const Map = function ({
     // })
     const marker = L.marker(poi.coord, { icon: cityIcon })
     marker.addTo(map)
+    poi.type = 'city'
     marker.on('click', e => updateText(poi))
   }
 
@@ -176,6 +178,7 @@ const Map = function ({
     // })
     const marker = L.marker(poi.coord, { icon: ruinsIcon })
     marker.addTo(map)
+    poi.type = 'ruins'
     marker.on('click', e => updateText(poi))
   }
 

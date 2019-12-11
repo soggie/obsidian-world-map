@@ -81,9 +81,21 @@
     }
 
     .leaflet-marker-icon {
-      -webkit-filter: drop-shadow( 0 0 5px rgba(0, 0, 0, 1));
-      filter: drop-shadow( 0 0 5px rgba(0, 0, 0, 1));
+      -webkit-filter: drop-shadow( 0 0 4px rgba(0, 0, 0, 1));
+      filter: drop-shadow( 0 0 4px rgba(0, 0, 0, 1));
       /* Similar syntax to box-shadow */
+    }
+
+    .info-class {
+      display: inline-block;
+      padding: .2rem .5rem;
+      vertical-align: .2rem;
+      background: #a1503b;
+      font-family: 'Lato', 'Arial', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: white;
+      text-transform: uppercase;
     }
   </style>
 </head>
@@ -94,7 +106,7 @@
     <div id="map-container"></div>
 
     <div id="info-container">
-      <h2 class="info-header" id="marker-title">Click on a marker</h2>
+      <h2 class="info-header"><span id="marker-title">Click on a marker</span> <span class="info-class" id="marker-class">-</span></h2>
       <p class="info-content" id="marker-description">-</p>
     </div>
   </div>
