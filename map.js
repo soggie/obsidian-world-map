@@ -8,37 +8,37 @@ const cities = [
 
   {
     name: 'Crasoa',
-    desc: 'A city built around the ruins of an ancient colosseum. A society of warrior poets, prideful of their martial past, where at the height of their power, annexed four of the seven great cities.',
+    desc: 'A city built around the ruins of an ancient colosseum. Ruled by warrior poets. Prideful of their martial past, but ignorant of how their warmongering destroyed the waystone network.',
     coord: L.latLng(-82.875, 71.25)
   },
 
   {
     name: 'Gausk',
-    desc: 'A city of flags, portals, and crossroads. Once a prosperous trading hub, it is now an isolated, rotting den of thieves ever since the waystone network was destroyed in the war.',
+    desc: 'A city of flags, portals, and crossroads. Once a prosperous trading hub, now an isolated, rotting den of thieves after the destruction of the waystone network in the war.',
     coord: L.latLng(-122.3125, 94.8125)
   },
 
   {
     name: 'Somar',
-    desc: 'Shunted by the other six cities for their obsession with sorcery, Somar is a city that spans three realms at once: the real world, the realm of nightmares, and the realm of spirits.',
+    desc: 'Haven for sorcerers and those who dabble in eldritch arts. A city that spans three realms at once: the real world, the realm of nightmares, and the realm of spirits.',
     coord: L.latLng(-142.125, 51.75)
   },
 
   {
     name: 'Nekris',
-    desc: 'A necropolis where the bodies of the dead are grafted into the city architecture through the practise of necromancy, or turned into flesh golems through the art of fleshcrafting.',
+    desc: 'A necropolis where death is only the beginning of eternal servitude. Treats necromancy as more of a science than sorcery. Extremely obsessed with personal legacy and family lineages.',
     coord: L.latLng(-127.8125, 169.8125)
   },
 
   {
     name: 'Telerim',
-    desc: '',
+    desc: 'A wonderous underwater city along the frozen coast. Pioneered a method to attain lichdom by replacing body parts with magic-infused mechanical equivalents. Insular and distrustful of outsiders.',
     coord: L.latLng(-83.125, 191.375)
   },
 
   {
     name: 'Raak',
-    desc: '',
+    desc: 'Thousands of vertical farms form the foundations of the city of stilts. Produces a massive surplus of food due to a fertility ritual gone wrong. Ruled by a coven of shapeshifting druids.',
     coord: L.latLng(-159.25, 185.875)
   },
 ]
