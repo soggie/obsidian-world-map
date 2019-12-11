@@ -52,7 +52,7 @@ const ruins = [
 
   {
     name: 'Ashenfel',
-    desc: 'Believed to be the capital of the forgotten empire, now a scorched ruins spawning an endless tide of horrors from beyond the Breach, held at bay by a tireless stream of crusaders.',
+    desc: 'Believed to be the capital of the forgotten empire, now a scorched ruins spawning an endless tide of horrors from beyond the Breach, held at bay by a tireless stream of warriors from Nekris',
     coord: L.latLng(-125.6875, 162)
   },
 
@@ -76,7 +76,7 @@ const ruins = [
 
   {
     name: 'Tower of Nadak',
-    desc: 'Its walls are lined with stone carvings of those who have attempted to breach the tower. A faint pulsing green glow emanates from the ornate windows in the tower\'s upper floors.',
+    desc: 'An ornate and ancient tower with thousands of cacophonous chattering skulls lining its walls. A faint pulsing green glow emanates from the ornate windows in the tower\'s upper floors.',
     coord: L.latLng(-114, 127.6875)
   },
 
