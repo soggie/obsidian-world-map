@@ -159,7 +159,7 @@ const Map = function ({
     //   fillColor: '#ed9479',
     //   fillOpacity: 0.8
     // })
-    const marker = L.marker(poi.coord, { icon: cityIcon })
+    const marker = L.marker(poi.coord, { icon: cityIcon }).bindPopup(poi.name)
     marker.addTo(map)
     poi.type = 'city'
     marker.on('click', e => updateText(poi))
@@ -176,7 +176,7 @@ const Map = function ({
     //   fillColor: '#cccccc',
     //   fillOpacity: 0.8
     // })
-    const marker = L.marker(poi.coord, { icon: ruinsIcon })
+    const marker = L.marker(poi.coord, { icon: ruinsIcon }).bindPopup(poi.name)
     marker.addTo(map)
     poi.type = 'ruins'
     marker.on('click', e => updateText(poi))
