@@ -46,8 +46,8 @@ const cities = [
 const ruins = [
   {
     name: 'Temple of the Dawn',
-    desc: 'A massive ziggurat said to contain relics from the forgotten empire in almost pristine conditions. Zealously guarded by a powerful society of remembrancers called the Awakened Order.',
-    coord: L.latLng(-113.25, 153.6875)
+    desc: 'A massive ziggurat said to contain tomes and codices from the forgotten empire in pristine conditions. Zealously guarded by a powerful society of remembrancers called the Awakened Order.',
+    coord: L.latLng(-133.9375, 144.6875)
   },
 
   {
@@ -84,6 +84,12 @@ const ruins = [
     name: 'Blightharrow',
     desc: 'Fortress of the Viceron Covenant. Overlooks the Breach. First line of defense against all eldritch horrors that crosses over to Itheas through the rift in reality.',
     coord: L.latLng(-106.625, 145.125)
+  },
+
+  {
+    name: 'Harvest Point',
+    desc: 'Ruins of what was once a massive storage facility. Upon the walls of the grain silos are warding runes written in glowing ink. A ring of crucified corpses warn visitors against trespassing.',
+    coord: L.latLng(-98.9375, 41)
   }
 ]
 
@@ -108,7 +114,7 @@ const locations = [
 
   {
     name: 'Balefire Peak',
-    desc: 'An active volcano constantly bleeding lava into the lands below. Infested with 9-legged spiders with glowing gems encrusted upon their abdomens. Rumoured to be the lair of an undead sorcerer king.',
+    desc: 'An active volcano constantly bleeding lava into the lands below. Infested with ethereal arachnids with glowing gems encrusted upon their abdomens. Rumoured to be the lair of an undead sorcerer king.',
     coord: L.latLng(-103.125, 68.25)
   },
 
@@ -137,27 +143,21 @@ const locations = [
   },
 
   {
-    name: 'Deepfire Pit',
-    desc: 'A wide recess the shape of lightning. The ground glows an eerie amber. Believed to be the remains of a terrible beast, slain by the Pale Maiden who later founded Morhas in the Soulmarrow Peaks.',
-    coord: L.latLng(-123.4375, 143.0625)
+    name: 'Abyssal Mirror',
+    desc: 'A deep, bottomless pit that many mistake as the Breach. Said to be the prison of a terrible being that predates the gods. Used as proving grounds for initiates of the Viceron Covenant.',
+    coord: L.latLng(-124.5, 142.6875)
   },
 
   {
-    name: 'Bleeding Mountain',
-    desc: '',
+    name: 'Bleeding Spire',
+    desc: 'A cursed volcano with a continuous stream of magma running down its eastern face. Those who strays too close almost always end up throwing themselves into the lava.',
     coord: L.latLng(-107.625, 102.0625)
   },
 
   {
     name: 'Crimson Sands',
-    desc: '',
+    desc: 'Badlands stained red from an ancient war. Littered with corpses and cursed implements of war. Infested by giant flesh-eating scorpions. The only accessible source of the valuable Blood Iron ores.',
     coord: L.latLng(-82.625, 80)
-  },
-
-  {
-    name: 'Silent Vale',
-    desc: '',
-    coord: L.latLng(-101.75, 127.1875)
   }
 ]
 
