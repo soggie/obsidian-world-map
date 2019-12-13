@@ -8,7 +8,7 @@ const cities = [
 
   {
     name: 'Crasoa',
-    desc: 'A city built around the ruins of an ancient colosseum. Ruled by warrior poets. Prideful of their martial past, but ignorant of how their warmongering destroyed the waystone network.',
+    desc: 'A city built around the ruins of an ancient colosseum. Ruled by warrior poets. Prideful of their martial past, but in denial of their role in destroying the waystone network with their warmonmgering.',
     coord: L.latLng(-82.875, 71.25)
   },
 
@@ -82,10 +82,12 @@ const ruins = [
 
   {
     name: 'Blightharrow',
-    desc: 'Fortress of a secret society called the Viceron Company. Overlooks the Breach. First line of defense against any eldritch horrors that crosses over to Itheas through the Breach.',
-    coord: L.latLng(-118.3125, 136.0625)
-  },
+    desc: 'Fortress of the Viceron Covenant. Overlooks the Breach. First line of defense against all eldritch horrors that crosses over to Itheas through the rift in reality.',
+    coord: L.latLng(-106.625, 145.125)
+  }
+]
 
+const locations = [
   {
     name: 'Wurmfall Pass',
     desc: 'A valley flanked by massive jagged pillars of rune-etched stones resembling a rib cage of a gargantuan serpent-like beast. The only (relatively) safe passage through the Balefire Range.',
@@ -93,14 +95,14 @@ const ruins = [
   },
 
   {
-    name: 'Sundered Pass',
-    desc: 'Legend has it that the great warrior Dawnseeker smashed the mountain into two with her bare hands so she could lead her people northwards towards the whispering coast. Now haunted by shadow wolves.',
+    name: 'Dawnseeker Pass',
+    desc: 'Legend has it that the great warrior Dawnseeker smashed the mountain into two with her axe so she could lead her people north towards a safe haven in her visions. Now haunted by shadow wolves.',
     coord: L.latLng(-107.75, 81.0625)
   },
 
   {
     name: 'Sorrow\'s End',
-    desc: 'The great warrior Dawnseeker succumbed to an eldritch disease here, but not before she led her people through the winding pass and gestured to the northern horizon to the ruins of an ancient colloseum.',
+    desc: 'The great warrior Dawnseeker succumbed to an eldritch disease here. With her dying breath she commanded her people to build a city atop the ruins of an ancient colosseum to the north.',
     coord: L.latLng(-99.1875, 80.125)
   },
 
@@ -112,7 +114,7 @@ const ruins = [
 
   {
     name: 'Serpent Spines',
-    desc: 'A formation of gigantic bone-like spikes jutting from the ground at a perpendicular angle. Plagued by hastening storms where time passes at a vastly accelerated rate for those caught within the storms.',
+    desc: 'A formation of gigantic bone-like spikes jutting from the ground at a perpendicular angle. Plagued by hastening storms where time passes at a vastly accelerated rate for anything within.',
     coord: L.latLng(-99, 119.875)
   },
 
@@ -120,6 +122,42 @@ const ruins = [
     name: 'Petrified Forest',
     desc: 'The only reason how the modern Itheasi knows what a tree looks like. A petried forest of trees from the ancient times, infested with beasts whose wails can turn living beings into stone.',
     coord: L.latLng(-151.25, 162.25)
+  },
+
+  {
+    name: 'Whispering Coast',
+    desc: 'A shoreline haunted by shambling ghasts whispering about personal regrets. Draws vagrants away from Crasoa. It is said one of the Seven Inevitable Horrors -- the Mournavore -- lairs here.',
+    coord: L.latLng(-68.4375, 74.1875)
+  },
+
+  {
+    name: 'The Breach',
+    desc: 'An arcane rift that leads to the realm of nightmares, torn open shortly after the gods\' exodus when the sorcerers of Itheas dabbled into magic beyond their mortal comprehension.',
+    coord: L.latLng(-104.0625, 149.5)
+  },
+
+  {
+    name: 'Deepfire Pit',
+    desc: 'A wide recess the shape of lightning. The ground glows an eerie amber. Believed to be the remains of a terrible beast, slain by the Pale Maiden who later founded Morhas in the Soulmarrow Peaks.',
+    coord: L.latLng(-123.4375, 143.0625)
+  },
+
+  {
+    name: 'Bleeding Mountain',
+    desc: '',
+    coord: L.latLng(-107.625, 102.0625)
+  },
+
+  {
+    name: 'Crimson Sands',
+    desc: '',
+    coord: L.latLng(-82.625, 80)
+  },
+
+  {
+    name: 'Silent Vale',
+    desc: '',
+    coord: L.latLng(-101.75, 127.1875)
   }
 ]
 
@@ -134,6 +172,12 @@ const ruinsIcon = L.icon({
   iconUrl: 'assets/ruin.svg',
   iconSize: [20, 20],
   iconAnchor: [10, 10]
+})
+
+const locationIcon = L.icon({
+  iconUrl: 'assets/location.svg',
+  iconSize: [14, 14],
+  iconAnchor: [7, 7]
 })
 
 const Map = function ({ 
@@ -191,6 +235,14 @@ const Map = function ({
     const marker = L.marker(poi.coord, { icon: ruinsIcon }).bindPopup(poi.name)
     marker.addTo(map)
     poi.type = 'ruins'
+    marker.on('click', e => updateText(poi))
+  }
+
+  // Load and place markers for locations
+  for (const poi of locations) {
+    const marker = L.marker(poi.coord, { icon: locationIcon }).bindPopup(poi.name)
+    marker.addTo(map)
+    poi.type = 'location'
     marker.on('click', e => updateText(poi))
   }
 
