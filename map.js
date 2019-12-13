@@ -90,6 +90,36 @@ const ruins = [
     name: 'Wurmfall Pass',
     desc: 'A valley flanked by massive jagged pillars of rune-etched stones resembling a rib cage of a gargantuan serpent-like beast. The only (relatively) safe passage through the Balefire Range.',
     coord: L.latLng(-116.5625, 105.5625)
+  },
+
+  {
+    name: 'Sundered Pass',
+    desc: 'Legend has it that the great warrior Dawnseeker smashed the mountain into two with her bare hands so she could lead her people northwards towards the whispering coast. Now haunted by shadow wolves.',
+    coord: L.latLng(-107.75, 81.0625)
+  },
+
+  {
+    name: 'Sorrow\'s End',
+    desc: 'The great warrior Dawnseeker succumbed to an eldritch disease here, but not before she led her people through the winding pass and gestured to the northern horizon to the ruins of an ancient colloseum.',
+    coord: L.latLng(-99.1875, 80.125)
+  },
+
+  {
+    name: 'Balefire Peak',
+    desc: 'An active volcano constantly bleeding lava into the lands below. Infested with 9-legged spiders with glowing gems encrusted upon their abdomens. Rumoured to be the lair of an undead sorcerer king.',
+    coord: L.latLng(-103.125, 68.25)
+  },
+
+  {
+    name: 'Serpent Spines',
+    desc: 'A formation of gigantic bone-like spikes jutting from the ground at a perpendicular angle. Plagued by hastening storms where time passes at a vastly accelerated rate for those caught within the storms.',
+    coord: L.latLng(-99, 119.875)
+  },
+
+  {
+    name: 'Petrified Forest',
+    desc: 'The only reason how the modern Itheasi knows what a tree looks like. A petried forest of trees from the ancient times, infested with beasts whose wails can turn living beings into stone.',
+    coord: L.latLng(-151.25, 162.25)
   }
 ]
 
@@ -150,15 +180,6 @@ const Map = function ({
   }
 
   for (const poi of cities) {
-    // const marker = L.circleMarker(poi.coord, {
-    //   radius: 10,
-    //   color: '#732007',
-    //   stroke: true,
-    //   weight: 2,
-    //   fill: true,
-    //   fillColor: '#ed9479',
-    //   fillOpacity: 0.8
-    // })
     const marker = L.marker(poi.coord, { icon: cityIcon }).bindPopup(poi.name)
     marker.addTo(map)
     poi.type = 'city'
@@ -167,15 +188,6 @@ const Map = function ({
 
   // Load and place markers for ruins
   for (const poi of ruins) {
-    // const marker = L.circleMarker(poi.coord, {
-    //   radius: 10,
-    //   color: '#888888',
-    //   stroke: true,
-    //   weight: 2,
-    //   fill: true,
-    //   fillColor: '#cccccc',
-    //   fillOpacity: 0.8
-    // })
     const marker = L.marker(poi.coord, { icon: ruinsIcon }).bindPopup(poi.name)
     marker.addTo(map)
     poi.type = 'ruins'
