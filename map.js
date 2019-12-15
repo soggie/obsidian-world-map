@@ -90,24 +90,6 @@ const ruins = [
     name: 'Harvest Point',
     desc: 'Ruins of an ancient storage facility. Warding sigils written in glowing ink line the walls of every silo. A fence of crucified corpses sing discordant tunes to ward away trespassers.',
     coord: L.latLng(-98.9375, 41)
-  },
-
-  {
-    name: 'Blackhaven',
-    desc: 'A fortress outpost jointly funded by Crasoa, Gausk and Somar. Operated by the Sintharii Circle as a resupply point for their westbound caravans. Training ground for the Silver Shields.',
-    coord: L.latLng(-113, 74.5)
-  },
-
-  {
-    name: 'Ravenstorm',
-    desc: 'A fortress outpost jointly funded by Morhas and Nekris. Operated by the Sintharii Circle as a central resupply point for their caravans. Home to close to a hundred mercenary companies.',
-    coord: L.latLng(-113.625, 154.625)
-  },
-
-  {
-    name: 'Fool\'s Reach',
-    desc: 'A fortress outpost jointly funded by Telerim and Morhas. Operated by the Sintharii Circle, and home to the Maiden Singers - a network of assassins and spies actively influencing politics in the seven cities.',
-    coord: L.latLng(-79, 144.125)
   }
 ]
 
@@ -168,7 +150,7 @@ const locations = [
 
   {
     name: 'Balefire Peak',
-    desc: 'A cursed volcano with a continuous stream of lava running down its eastern face. Those who strays too close are compelled to throw themselves into the lava.',
+    desc: 'A cursed volcano with a continuous stream of maga running down its eastern face that pools into a lava lake. Lair of the Obsidian Beast. Magic users lose their ability to think when they get close.',
     coord: L.latLng(-107.625, 102.0625)
   },
 
@@ -176,6 +158,44 @@ const locations = [
     name: 'Crimson Sands',
     desc: 'Badlands stained red from an ancient war. Littered with corpses and cursed implements of war. Infested by giant flesh-eating scorpions. The only accessible source of the valuable Blood Iron ores.',
     coord: L.latLng(-82.625, 80)
+  },
+
+  {
+    name: 'Last Lantern',
+    desc: 'An abandoned cabin by the edge of the Petrified Forest. Guarded by animated suits of golden armour. Those who camp nearby will receive visions of a wish granting machine within the cabin.',
+    coord: L.latLng(-137.875, 175.75)
+  },
+
+  {
+    name: 'Dreadmarsh',
+    desc: 'A foul smelling bog where the Raakians dump their surplus crops. Warm and humid due to underwater thermal vents. Faint drumming can be heard at the fringes of the bog.',
+    coord: L.latLng(-169.25, 185.375)
+  }
+]
+
+const forts = [
+  {
+    name: 'Blackhaven',
+    desc: 'A fortress outpost jointly funded by Crasoa, Gausk and Somar. Operated by the Sintharii Circle as a resupply point for their westbound caravans. Frequently besieged by cannibalistic raiders.',
+    coord: L.latLng(-113, 74.5)
+  },
+
+  {
+    name: 'Ravenhold',
+    desc: 'A fortress outpost jointly funded by Morhas and Nekris. Operated by the Sintharii Circle as a central resupply point for their caravans. Home to many mercenary companies hoping for employment as caravan guards.',
+    coord: L.latLng(-113.625, 154.625)
+  },
+
+  {
+    name: 'Fool\'s Reach',
+    desc: 'A fortress outpost funded by Telerim. Operated by the Sintharii Circle alongside the Maiden Singers - a secretive network of assassins and spies - who the Sintharii employ to ensure their monopoly on travel.',
+    coord: L.latLng(-79, 144.125)
+  },
+
+  {
+    name: 'Ith Narak',
+    desc: 'A fortress outpost built by the Sintharii Circle. Heavily guarded by their elite militia - the Silver Shields. Situated atop an ancient silver mine that doubles as training grounds for the warriors.',
+    coord: L.latLng(-120.875, 192.625)
   }
 ]
 
@@ -196,6 +216,12 @@ const locationIcon = L.icon({
   iconUrl: 'assets/location.svg',
   iconSize: [14, 14],
   iconAnchor: [7, 7]
+})
+
+const fortIcon = L.icon({
+  iconUrl: 'assets/fort.svg',
+  iconSize: [18, 18],
+  iconAnchor: [9, 18]
 })
 
 const Map = function ({ 
@@ -264,6 +290,14 @@ const Map = function ({
     marker.on('click', e => updateText(poi))
   }
 
+  // Load and place markers for forts
+  for (const poi of forts) {
+    const marker = L.marker(poi.coord, { icon: fortIcon }).bindPopup(poi.name)
+    marker.addTo(map)
+    poi.type = 'fortress'
+    marker.on('click', e => updateText(poi))
+  }
+
   return map
 }
 
@@ -293,7 +327,7 @@ itheas.on('dblclick', function (e) {
   //   fillOpacity: 0.8
   // }).addTo(itheas)
 
-  console.log(coord.lat, coord.lng)
+  console.log(`L.latLng(${coord.lat}, ${coord.lng})`)
 
   // Show the tools container
   // const container = document.getElementById('tools-container')
