@@ -8,37 +8,37 @@ const cities = [
 
   {
     name: 'Crasoa',
-    desc: 'A city built around the ruins of an ancient colosseum. Ruled by warrior poets. Prideful of their martial past, but in denial of their role in destroying the waystone network with their warmonmgering.',
+    desc: 'A city built atop the ruins of an ancient colosseum. Ruled by warrior poets. Prideful of their martial traditions, but denies their role in the waystone network\'s destruction through their warmonmgering.',
     coord: L.latLng(-82.875, 71.25)
   },
 
   {
     name: 'Gausk',
-    desc: 'A city of flags, portals, and crossroads. Once a prosperous trading hub, now an isolated, rotting den of thieves after the destruction of the waystone network in the war.',
+    desc: 'A city of flags, perfect squares, and crossroads. Once a prosperous trading hub, now an isolated, rotting den of thieves after the destruction of the waystone network.',
     coord: L.latLng(-122.3125, 94.8125)
   },
 
   {
     name: 'Somar',
-    desc: 'Haven for sorcerers and those who dabble in eldritch arts. A city that spans three realms at once: the real world, the realm of nightmares, and the realm of spirits.',
+    desc: 'Haven for sorcerers, mystics and fateweavers. A city that spans three realms at once: the real world, the realm of nightmares, and the realm of spirits. Dosmeticated giant spiders as mounts.',
     coord: L.latLng(-142.125, 51.75)
   },
 
   {
     name: 'Nekris',
-    desc: 'A necropolis where death is only the beginning of eternal servitude. Treats necromancy as more of a science than sorcery. Extremely obsessed with personal legacy and family lineages.',
+    desc: 'A necropolis where death is only the beginning of eternal servitude. Necromancy is respected and widely studied and practised. Obsessed with personal legacy and familial history.',
     coord: L.latLng(-127.8125, 169.8125)
   },
 
   {
     name: 'Telerim',
-    desc: 'A wonderous underwater city along the frozen coast. Pioneered a method to attain lichdom by replacing body parts with magic-infused mechanical equivalents. Insular and distrustful of outsiders.',
+    desc: 'A wonderous underwater city along the frozen coast. Pioneered the attainment of lichdom by replacing body parts with magic-infused mechanical equivalents. Insular and distrustful of outsiders.',
     coord: L.latLng(-83.125, 191.375)
   },
 
   {
     name: 'Raak',
-    desc: 'Thousands of vertical farms form the foundations of the city of stilts. Produces a massive surplus of food due to a fertility ritual gone wrong. Ruled by a coven of shapeshifting druids.',
+    desc: 'Thousands of vertical farms form the foundations of the city of stilts. Plagued by a massive surplus of food due to a fertility ritual gone wrong. Ruled by a coven of shapeshifting druids.',
     coord: L.latLng(-159.25, 185.875)
   },
 ]
@@ -46,57 +46,75 @@ const cities = [
 const ruins = [
   {
     name: 'Temple of the Dawn',
-    desc: 'A massive ziggurat said to contain tomes and codices from the forgotten empire in pristine conditions. Zealously guarded by a powerful society of remembrancers called the Awakened Order.',
+    desc: 'A massive ziggurat said to contain tomes and codices from ancient times in pristine condition. Zealously guarded by an influential society of remembrancers called the Awakened Order.',
     coord: L.latLng(-133.9375, 144.6875)
   },
 
   {
     name: 'Ashenfel',
-    desc: 'Believed to be the capital of the forgotten empire, now a scorched ruins spawning an endless tide of horrors from beyond the Breach, held at bay by a tireless stream of warriors from Nekris',
+    desc: 'Believed to be the capital of the forgotten empire, now a scorched ruins infested with endless otherworldly horrors from beyond the Breach, held at bay by a tireless stream of crusaders from Nekris',
     coord: L.latLng(-125.6875, 162)
   },
 
   {
     name: 'Sinthar',
-    desc: 'Legendary stronghold of the Sintharii Circle who holds a monopoly on inter-city travel after the destruction of the waystone network. No outsider has succeeded in finding a way in yet.',
+    desc: 'Legendary stronghold of the Sintharii Circle that monopolised inter-city travel after the destruction of the waystone network. No outsider has succeeded in locating the stronghold yet.',
     coord: L.latLng(-121.0625, 181.25)
   },
 
   {
-    name: 'Xisa',
-    desc: 'The petrified remains of the god of hunt and forage. A faint purple light pulses from within the cracks. No person have ever managed to get close enough to study it without going mad.',
+    name: 'Xisari Colossus',
+    desc: 'The petrified remains of a four-limbed giant in the midst of casting a spear into the western sky. A faint purple glow pulses from its eyes. Those who gaze upon it go mad within minutes.',
     coord: L.latLng(-110.375, 29.9375)
   },
 
   {
-    name: 'Maska',
-    desc: 'A massive pit lined with unknown organic matter, slime, blood and feces. In the middle of the pit is a massive hand clutching a spectacularly crafted ornate glaive in pristine condition.',
+    name: 'Flesh Pit',
+    desc: 'A massive crater lined with unknown organic matter, slime, blood and bone fragments. In the center of the pit is an upraised hand clutching an ornate weapon in pristine condition.',
     coord: L.latLng(-137.71875, 82.625)
   },
 
   {
     name: 'Tower of Nadak',
-    desc: 'An ornate and ancient tower with thousands of cacophonous chattering skulls lining its walls. A faint pulsing green glow emanates from the ornate windows in the tower\'s upper floors.',
+    desc: 'An ornate and ancient tower with thousands of chattering skulls lining its walls, eager to strike up conversation with tresspassers. A pale purple glow shines from the cracks of its masonry.',
     coord: L.latLng(-114, 127.6875)
   },
 
   {
     name: 'Blightharrow',
-    desc: 'Fortress of the Viceron Covenant. Overlooks the Breach. First line of defense against all eldritch horrors that crosses over to Itheas through the rift in reality.',
+    desc: 'Fortress of the Viceron Watch. First line of defense against eldritch horrors that crosses over to Itheas through the Breach. Raids passing caravans for child captives to fill their ranks.',
     coord: L.latLng(-106.625, 145.125)
   },
 
   {
     name: 'Harvest Point',
-    desc: 'Ruins of what was once a massive storage facility. Upon the walls of the grain silos are warding runes written in glowing ink. A ring of crucified corpses warn visitors against trespassing.',
+    desc: 'Ruins of an ancient storage facility. Warding sigils written in glowing ink line the walls of every silo. A fence of crucified corpses sing discordant tunes to ward away trespassers.',
     coord: L.latLng(-98.9375, 41)
+  },
+
+  {
+    name: 'Blackhaven',
+    desc: 'A fortress outpost jointly funded by Crasoa, Gausk and Somar. Operated by the Sintharii Circle as a resupply point for their westbound caravans. Training ground for the Silver Shields.',
+    coord: L.latLng(-113, 74.5)
+  },
+
+  {
+    name: 'Ravenstorm',
+    desc: 'A fortress outpost jointly funded by Morhas and Nekris. Operated by the Sintharii Circle as a central resupply point for their caravans. Home to close to a hundred mercenary companies.',
+    coord: L.latLng(-113.625, 154.625)
+  },
+
+  {
+    name: 'Fool\'s Reach',
+    desc: 'A fortress outpost jointly funded by Telerim and Morhas. Operated by the Sintharii Circle, and home to the Maiden Singers - a network of assassins and spies actively influencing politics in the seven cities.',
+    coord: L.latLng(-79, 144.125)
   }
 ]
 
 const locations = [
   {
-    name: 'Wurmfall Pass',
-    desc: 'A valley flanked by massive jagged pillars of rune-etched stones resembling a rib cage of a gargantuan serpent-like beast. The only (relatively) safe passage through the Balefire Range.',
+    name: 'Wyrmfall Pass',
+    desc: 'A valley flanked by massive pillars of rune-etched stones resembling a rib cage of a gargantuan wyrm. The only (relatively) safe passage through the Severim Range. Home to soul-eating giant vultures.',
     coord: L.latLng(-116.5625, 105.5625)
   },
 
@@ -108,13 +126,13 @@ const locations = [
 
   {
     name: 'Sorrow\'s End',
-    desc: 'The great warrior Dawnseeker succumbed to an eldritch disease here. With her dying breath she commanded her people to build a city atop the ruins of an ancient colosseum to the north.',
+    desc: 'The great warrior Dawnseeker succumbed to a wasting disease here. With her dying breath she commanded her people to build a city atop the ruins of an ancient colosseum visible upon the northern horizon.',
     coord: L.latLng(-99.1875, 80.125)
   },
 
   {
-    name: 'Balefire Peak',
-    desc: 'An active volcano constantly bleeding lava into the lands below. Infested with ethereal arachnids with glowing gems encrusted upon their abdomens. Rumoured to be the lair of an undead sorcerer king.',
+    name: 'Spire of Thousand Eyes',
+    desc: 'Red smoke bellows from the volcano. Littered with pits of bubbling magma. Infested with glowing arachnid monstrosities. Rumoured to be the lair of an undead spider queen.',
     coord: L.latLng(-103.125, 68.25)
   },
 
@@ -126,31 +144,31 @@ const locations = [
 
   {
     name: 'Petrified Forest',
-    desc: 'The only reason how the modern Itheasi knows what a tree looks like. A petried forest of trees from the ancient times, infested with beasts whose wails can turn living beings into stone.',
+    desc: 'A petried forest of trees from the ancient times, and the only reason why the Itheasi knows what a tree looks like. Believed to be the root of all lycanthropy illness of the world.',
     coord: L.latLng(-151.25, 162.25)
   },
 
   {
     name: 'Whispering Coast',
-    desc: 'A shoreline haunted by shambling ghasts whispering about personal regrets. Draws vagrants away from Crasoa. It is said one of the Seven Inevitable Horrors -- the Mournavore -- lairs here.',
+    desc: 'A shoreline haunted by shambling masked cadavers whispering about personal regrets. Draws vagrants away from Crasoa. It is said one of the Seven Inevitable Horrors -- the Mournavore -- lairs here.',
     coord: L.latLng(-68.4375, 74.1875)
   },
 
   {
     name: 'The Breach',
-    desc: 'An arcane rift that leads to the realm of nightmares, torn open shortly after the gods\' exodus when the sorcerers of Itheas dabbled into magic beyond their mortal comprehension.',
+    desc: 'An tear in the fabric of reality into the realm of nightmares where unimaginable horrors dwell. Now a cursed place no Itheasi would dare encroach, lest they wish for a fate worse than death.',
     coord: L.latLng(-104.0625, 149.5)
   },
 
   {
-    name: 'Abyssal Mirror',
-    desc: 'A deep, bottomless pit that many mistake as the Breach. Said to be the prison of a terrible being that predates the gods. Used as proving grounds for initiates of the Viceron Covenant.',
+    name: 'Abyssal Rift',
+    desc: 'A deep, bottomless pit capped with a shimmering blue arcane seal. Believed to be the prison of a terrible being that predates even the gods. Pilgrimage spot for new initiates of the Viceron Watch',
     coord: L.latLng(-124.5, 142.6875)
   },
 
   {
-    name: 'Bleeding Spire',
-    desc: 'A cursed volcano with a continuous stream of magma running down its eastern face. Those who strays too close almost always end up throwing themselves into the lava.',
+    name: 'Balefire Peak',
+    desc: 'A cursed volcano with a continuous stream of lava running down its eastern face. Those who strays too close are compelled to throw themselves into the lava.',
     coord: L.latLng(-107.625, 102.0625)
   },
 
