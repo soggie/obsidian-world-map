@@ -31,7 +31,7 @@ const cities = [
   },
 
   {
-    name: 'Telerim',
+    name: 'Telerea',
     desc: 'A wonderous underwater city along the frozen coast. Pioneered the attainment of lichdom by replacing body parts with magic-infused mechanical equivalents. Insular and distrustful of outsiders.',
     coord: L.latLng(-83.125, 191.375)
   },
@@ -168,7 +168,7 @@ const locations = [
 
   {
     name: 'Dreadmarsh',
-    desc: 'A foul smelling bog where the Raakians dump their surplus crops. Warm and humid due to underwater thermal vents. Faint drumming can be heard at the fringes of the bog.',
+    desc: 'A foul smelling bog where the Raaki dump their surplus crops. Warm and humid due to underwater thermal vents. Faint drumming can be heard at the fringes of the bog.',
     coord: L.latLng(-169.25, 185.375)
   }
 ]
@@ -188,7 +188,7 @@ const forts = [
 
   {
     name: 'Fool\'s Reach',
-    desc: 'A fortress outpost funded by Telerim. Operated by the Sintharii Circle alongside the Maiden Singers - a secretive network of assassins and spies - who the Sintharii employ to ensure their monopoly on travel.',
+    desc: 'A fortress outpost funded by Telerea. Operated by the Sintharii Circle alongside the Maiden Singers - a secretive network of assassins and spies - who the Sintharii employ to ensure their monopoly on travel.',
     coord: L.latLng(-79, 144.125)
   },
 
